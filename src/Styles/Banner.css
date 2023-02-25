@@ -1,0 +1,130 @@
+.banner {
+    margin-top: 0;
+    padding: 250px 0 175px 0 ;
+}
+
+.tagline {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 10px;
+    background: linear-gradient(90.21deg, rgba(69, 90, 100, 0.765) -5.91%, rgba(17, 198, 198, 0.845) 111.58%);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px 5px;
+    font-size: 1rem;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.banner h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.banner p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+}
+
+.banner a {
+    text-decoration: none;
+}
+
+.banner button {
+    color: #2c2c2c;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 60px;
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+    border:2px solid silver;
+    border-radius: 10px 5px;
+    transition: 0.3s;
+}
+
+.banner button svg {
+    font-size: 0.8rem;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+    line-height: 1;
+}
+
+.banner button:hover{
+    transform: scale(1.2);
+    border-radius: 5px 10px;
+}
+.banner button:hover svg {
+    margin-left: 25px;
+    
+}
+
+.banner img {
+    animation: updown 3s linear infinite;
+}
+
+.Name{
+    color: lightseagreen;
+    animation: blink 3s linear infinite;
+}
+
+@keyframes blink{
+    0% {
+        opacity: 0.15;
+    }
+    25% {
+        opacity: 0.50;
+    }
+    50% {
+        opacity: 0.75;
+        color: rgb(46, 253, 243);
+    }
+    75% {
+        opacity: 0.50;
+    }
+    100% {
+        opacity: 0.15;
+    }
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(-15px);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+.txt-rotate > .wrap {
+    border-right: 0.08em solid #666;
+}
+
+.image{
+    width:100%;
+}
+
+@media screen {
+    @media screen and (max-width : 768px) {
+        .image{
+            margin-top: 100px;
+        }
+    }
+    
+    @media screen and (max-width : 492px) {
+        .image img{
+            height: 15rem;
+        }
+        .banner h2{
+            font-size: 2.5rem;
+        }
+    }
+}
